@@ -46,11 +46,15 @@ fun App() {
                 modifier = Modifier
                     .padding(horizontal = 24.dp)
             ) {
-                TitleInsight("Hi KMP developers")
-                ParagraphInsight("Feel free to customize your app's typography by integrating custom fonts. With just a few steps, you can enhance your app's look and feel. Happy coding!")
-                SubTitleInsight("Follow me on Instagram at @ux_ui_insights")
-            }
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    TitleInsight("Hi KMP developers")
+                    ParagraphInsight("Feel free to customize your app's typography by integrating custom fonts. With just a few steps, you can enhance your app's look and feel. Happy coding!")
+                    SubTitleInsight("Follow me on Instagram at @ux_ui_insights")
+                }
 
+            }
         }
     }
 }

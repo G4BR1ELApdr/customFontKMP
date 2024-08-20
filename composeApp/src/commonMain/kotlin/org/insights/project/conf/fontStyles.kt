@@ -5,6 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import fontstyles.composeapp.generated.resources.REM_Italic
 import fontstyles.composeapp.generated.resources.REM_Regular
 import fontstyles.composeapp.generated.resources.REM_SemiBold
@@ -19,6 +20,7 @@ fun TitleInsight(
     Text(
         text = text,
         color = Color(0xFF140f2f),
+        textAlign = TextAlign.Center,
         fontWeight = FontWeight.SemiBold,
         fontFamily = FontFamily(Font(Res.font.REM_SemiBold)),
     )
@@ -31,6 +33,7 @@ fun SubTitleInsight(
     Text(
         text = text,
         color = Color(0xFF140f2f),
+        textAlign = TextAlign.Center,
         fontWeight = FontWeight.Normal,
         fontFamily = FontFamily(Font(Res.font.REM_Italic)),
     )
@@ -41,6 +44,7 @@ fun ParagraphInsight(
 ) {
     Text(
         text = text,
+        textAlign = TextAlign.Center,
         color = Color(0xFF140f2f),
         fontWeight = FontWeight.Normal,
         fontFamily = FontFamily(Font(Res.font.REM_Regular)),
